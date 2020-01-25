@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "896106824509",
+    "firebase_url": "https://medicine-delivery-8cc6f.firebaseio.com",
+    "project_id": "medicine-delivery-8cc6f",
+    "storage_bucket": "medicine-delivery-8cc6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896106824509:android:6495981aad73afe9277b54",
+        "android_client_info": {
+          "package_name": "com.spark.medicinedelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "896106824509-0gjbpf1692fu64v1sjugtmd4oc4hfs6d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.spark.medicinedelivery",
+            "certificate_hash": "770aa8eec59abbcbec73b507c0c192184b7540df"
+          }
+        },
+        {
+          "client_id": "896106824509-rr0ctlauc46hmdkhju1u3n1ls8g52l8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmggl8Oqavo7UPQZBcquOPZiqlQRx5754"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "896106824509-rr0ctlauc46hmdkhju1u3n1ls8g52l8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

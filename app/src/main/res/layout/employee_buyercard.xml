@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/employee_viewcards_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/buyer_dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/male_avatar"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/buyer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="22dp"
+                android:text="Ophelia Coleman"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:id="@+id/buyer_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ophelia@skynet.com"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"/>
+
+            <TextView
+                android:id="@+id/buyer_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/phone_icon"
+                android:drawablePadding="10dp"
+                android:text="1234567890"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp"
+                android:paddingLeft="5dp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/buyer_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/location_icon"
+            android:drawablePadding="10dp"
+            android:maxWidth="200dp"
+            android:textSize="16dp"
+            android:paddingLeft="5dp"
+            android:text="1064/14, Pragati Park, Brahmapur, Garia, Kolkata - 700096"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

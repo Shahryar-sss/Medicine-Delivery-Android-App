@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeMainActivity"
+    android:background="@drawable/employee_mainscreen_background">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/company_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/employee_mainscreen_profile_pic"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/employee_avatar"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/employee_mainscreen_empname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/employee_mainscreen_profile_pic"/>
+
+    <TextView
+        android:id="@+id/employee_mainscreen_empemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/employee_mainscreen_empname" />
+
+    <TextView
+        android:id="@+id/employee_mainscreen_customer_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/employee_id_icon"
+        android:drawablePadding="13dp"
+        android:paddingLeft="10dp"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/employee_mainscreen_seller_stat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/employee_mainscreen_seller_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/employee_id_icon"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="13dp"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/employee_mainscreen_profit_stat"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/employee_mainscreen_profit_stat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/rupee_indian"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/employee_mainscreen_viewbuyer_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/employee_mainscreen_viewbuyer_btn"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="45dp"
+        android:background="@drawable/employee_view_buyers_btn"
+        app:layout_constraintBottom_toTopOf="@+id/employee_mainscreen_viewseller_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/employee_mainscreen_viewseller_btn"
+        android:layout_width="160dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="43dp"
+        android:background="@drawable/employee_view_seller_btn"
+        app:layout_constraintBottom_toTopOf="@+id/employee_mainscreen_viewemp_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/employee_mainscreen_viewemp_btn"
+        android:layout_width="190dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/employee_view_employees_btn"
+        app:layout_constraintBottom_toTopOf="@+id/employee_mainscreen_logout_btn"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/employee_mainscreen_logout_btn"
+        android:layout_width="130dp"
+        android:layout_height="36dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/employee_logout_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

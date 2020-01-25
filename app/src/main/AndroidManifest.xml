@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.spark.medicinedelivery">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_custom_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ShopReportActivity"
+            android:parentActivityName=".ViewSellersActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ShopReportTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ViewSellersActivity" />
+        </activity>
+        <activity
+            android:name=".AboutSayangdiptoActivity"
+            android:parentActivityName=".AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AboutSaynagdiptoTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AboutUsActivity" />
+        </activity>
+        <activity
+            android:name=".AboutSohiniActivity"
+            android:parentActivityName=".AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AboutSohiniTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AboutUsActivity" />
+        </activity>
+        <activity
+            android:name=".AboutAnuritaActivity"
+            android:parentActivityName=".AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AboutAnuritaTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AboutUsActivity" />
+        </activity>
+        <activity
+            android:name=".AboutShahryarActivity"
+            android:parentActivityName=".AboutUsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AboutShahryarTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".AboutUsActivity" />
+        </activity>
+        <activity
+            android:name=".AboutUsActivity"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AboutUsTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ProfileActivity" />
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".SellerProfileActivity"
+            android:parentActivityName=".SellerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SellerTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SellerMainActivity" />
+        </activity>
+        <activity
+            android:name=".ViewMedicineActivity"
+            android:parentActivityName=".SellerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SellerTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SellerMainActivity" />
+        </activity>
+        <activity
+            android:name=".ViewEmployeeActivity"
+            android:parentActivityName=".EmployeeMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ViewEmployeeTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EmployeeMainActivity" />
+        </activity>
+        <activity
+            android:name=".ViewSellersActivity"
+            android:parentActivityName=".EmployeeMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ViewSellersTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EmployeeMainActivity" />
+        </activity>
+        <activity
+            android:name=".ViewBuyersActivity"
+            android:parentActivityName=".EmployeeMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ViewBuyersTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".EmployeeMainActivity" />
+        </activity>
+        <activity
+            android:name=".TextDetectionActivity"
+            android:parentActivityName=".BuyerMainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuyerMainActivity" />
+        </activity>
+        <activity
+            android:name=".AddMedicinesActivity"
+            android:parentActivityName=".SellerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SellerTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SellerMainActivity" />
+        </activity>
+        <activity
+            android:name=".AddToCartActivity"
+            android:parentActivityName=".BuyerMainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuyerMainActivity" />
+        </activity>
+        <activity
+            android:name=".ShopSelectionActivity"
+            android:parentActivityName=".BuyerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BuyerMainTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuyerMainActivity" />
+        </activity>
+        <activity
+            android:name=".EmergencyActivity"
+            android:parentActivityName=".BuyerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EmergencyTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuyerMainActivity" />
+        </activity>
+        <activity
+            android:name=".SubscriptionActivity"
+            android:parentActivityName=".BuyerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BuyerMainTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuyerMainActivity" />
+        </activity>
+        <activity
+            android:name=".CartActivity"
+            android:parentActivityName=".BuyerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BuyerMainTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuyerMainActivity" />
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:parentActivityName=".BuyerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ProfileTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".BuyerMainActivity" />
+        </activity>
+        <activity
+            android:name=".EmployeeMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EmployeeHomeTheme"/>
+        <activity
+            android:name=".SellerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SellerTheme" />
+        <activity
+            android:name=".BuyerMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BuyerMainTheme" />
+        <activity
+            android:name=".EmployeeRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SellerRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".BuyerRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:parentActivityName=".LoginActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".LoginActivity" />
+        </activity>
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="ocr" />
+    </application>
+
+</manifest>

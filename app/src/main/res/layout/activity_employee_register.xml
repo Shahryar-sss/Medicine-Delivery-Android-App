@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmployeeRegisterActivity"
+    android:background="@drawable/employee_singup_screen_background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/buyer_mainactivity_dp_imageview"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="280dp"
+        android:src="@drawable/employee_avatar"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/employee_image_upload_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/yellow_camera_image_btn_backgound"
+        app:layout_constraintStart_toStartOf="@+id/buyer_mainactivity_dp_imageview"
+        app:layout_constraintTop_toTopOf="@+id/buyer_mainactivity_dp_imageview" />
+
+    <EditText
+        android:id="@+id/emp_phone_inp"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:background="@drawable/generic_textinput_background"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Phone Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emp_id_inp"/>
+
+    <EditText
+        android:id="@+id/emp_id_inp"
+        android:layout_width="265dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="425dp"
+        android:background="@drawable/generic_textinput_background"
+        android:drawableLeft="@drawable/employee_id_icon"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Employee ID"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/employee_finish_acc_btn"
+        android:layout_width="117dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:text="Finish"
+        android:textColor="#ffffff"
+        android:background="@drawable/employee_finish_acc_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emp_phone_inp" />
+
+</android.support.constraint.ConstraintLayout>

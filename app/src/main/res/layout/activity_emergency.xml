@@ -1,0 +1,81 @@
+<android.support.constraint.ConstraintLayout
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <Button
+        android:id="@+id/emergency_screen_back_btn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/cross_icon_red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context="com.example.priyanka.mapsdemo.MapsActivity" />
+
+    <LinearLayout
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+            <pl.bclogic.pulsator4droid.library.PulsatorLayout
+                android:id="@+id/pulsator"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:pulse_count="4"
+                app:pulse_duration="1200"
+                app:pulse_repeat="0"
+                app:pulse_color="@color/colorAccent"
+                app:pulse_startFromScratch="false"
+                app:pulse_interpolator="Linear"
+                android:background="@drawable/book_ambulance_background">
+            </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6 ambulances available nearby"
+            android:layout_marginTop="10dp"
+            android:textColor="#FF455D"/>
+
+        <Button
+            android:id="@+id/B_hospitals"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:onClick="onClick"
+            android:text="Nearby Hospitals"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="@drawable/logout_btn_background"/>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerRegisterActivity"
+    android:background="@drawable/seller_signup_screen_background">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/buyer_mainactivity_dp_imageview"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/shop_avatar"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/employee_image_upload_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="60dp"
+        android:background="@drawable/camera_button_background"
+        app:layout_constraintStart_toStartOf="@+id/buyer_mainactivity_dp_imageview"
+        app:layout_constraintTop_toTopOf="@+id/buyer_mainactivity_dp_imageview" />
+
+    <EditText
+        android:id="@+id/shop_name"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="276dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:background="@drawable/generic_textinput_background"
+        android:drawableLeft="@drawable/shop_icon"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Shop Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/shop_phone"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:background="@drawable/generic_textinput_background"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Phone Number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shop_name"/>
+
+    <EditText
+        android:id="@+id/shop_address"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:background="@drawable/generic_textinput_background"
+        android:drawableLeft="@drawable/location_icon"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        android:hint="Address"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/shop_phone"/>
+
+    <Button
+        android:id="@+id/seller_acc_finish_btn"
+        android:layout_width="117dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/seller_finish_acc_btn"
+        android:text="Finish"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shop_address" />
+
+
+</android.support.constraint.ConstraintLayout>

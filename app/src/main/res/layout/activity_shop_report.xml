@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopReportActivity"
+    android:background="@drawable/shop_report_screen_background">
+
+    <TextView
+        android:id="@+id/report_screen_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/report_screen_business_report_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Report"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report_screen_shop_name"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="616dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/report_screen_business_report_text">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profit for fiscal year 2019-20"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="30dp"/>
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/report_screen_bar_graph"
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comparison with other registered vendors"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"/>
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/report_screen_pie_chart"
+                android:layout_width="350dp"
+                android:layout_height="280dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration Details"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_gravity="start"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="start"
+                android:layout_marginLeft="30dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reg Date"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Account ID"
+                        android:textSize="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Last Logged In"
+                        android:textSize="16dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="100dp"
+                    android:layout_marginLeft="100dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/report_screen_reg_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/report_screen_acc_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textSize="16dp"
+                        android:text=""/>
+
+                    <TextView
+                        android:id="@+id/report_screen_logged_in_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="16dp"
+                        android:text=""/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medicines In Inventory"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/report_screen_medicines_list"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/report_screen_call_btn"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/contact_owner_btn_bg"
+                android:text="Call Owner"
+                android:textStyle="bold"
+                android:textColor="#FFD700"/>
+
+            <Button
+                android:id="@+id/report_screen_email_btn"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/contact_owner_btn_bg"
+                android:text="Email Owner"
+                android:textStyle="bold"
+                android:textColor="#FFD700"/>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

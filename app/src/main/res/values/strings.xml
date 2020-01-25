@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Medicine Delivery</string>
+
+    <!--String Array for spinner widget-->
+
+    <string-array name="usertype_array">
+        <item>Buyer</item>
+        <item>Seller</item>
+        <item>Employee</item>
+    </string-array>
+
+    <string-array name="med_type_array">
+        <item>Tablet</item>
+        <item>Syrup</item>
+    </string-array>
+
+
+    <string name="details_text"><u>Details</u></string>
+    <string name="subscribed_medicines_text"><u>Subscribed Medicines</u></string>
+    <string name="google_maps_key">AIzaSyAmggl8Oqavo7UPQZBcquOPZiqlQRx5754</string>
+    <string name="profile_menu_items">About Us</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/profile_screen_background">
+
+    <Button
+        android:id="@+id/profile_screen_prev_btn"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/arrow_back_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profile_screen_menu_btn"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:padding="50dp"
+        android:background="@drawable/menu"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="40dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/profile_menu_items"
+        android:onClick="showPopup"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_screen_imageview"
+        android:layout_width="105dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="124dp"
+        android:src="@drawable/male_avatar"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profile_screen_image_upload_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="65dp"
+        android:background="@drawable/camera_button_background"
+        app:layout_constraintStart_toStartOf="@+id/profile_screen_imageview"
+        app:layout_constraintTop_toTopOf="@+id/profile_screen_imageview" />
+
+    <TextView
+        android:id="@+id/profile_screen_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_screen_imageview" />
+
+    <TextView
+        android:id="@+id/profile_screen_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_screen_username" />
+
+    <EditText
+        android:id="@+id/profile_screen_phone_number"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:background="@drawable/generic_textinput_background"
+        android:drawableLeft="@drawable/phone_icon"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_screen_email" />
+
+    <EditText
+        android:id="@+id/profile_screen_user_address"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPostalAddress"
+        android:background="@drawable/generic_textinput_background"
+        android:drawableLeft="@drawable/location_icon"
+        android:drawablePadding="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_screen_phone_number"/>
+
+    <Button
+        android:id="@+id/profile_screen_update_btn"
+        android:layout_width="103dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/update_details_btn_background"
+        android:text="Update"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_screen_user_address" />
+
+    <Button
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/order_history_btn_background"
+        android:text="Order History"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_screen_update_btn" />
+
+    <Button
+        android:id="@+id/profile_screen_logout_btn"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="42dp"
+        android:background="@drawable/logout_btn_background"
+        android:text="Log Out"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

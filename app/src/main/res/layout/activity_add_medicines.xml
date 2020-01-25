@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedicinesActivity"
+    android:background="@drawable/add_medicines_screen_background">
+
+    <TextView
+        android:id="@+id/seller_addmeds_dashboard_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Medicines"
+        android:textColor="#FFFFFF"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/seller_addmeds_medname_box"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:focusedByDefault="false"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_addmeds_dashboard_text">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/seller_addmeds_medname_text"
+            android:layout_width="280dp"
+            android:paddingLeft="10dp"
+            android:focusedByDefault="false"
+            android:height="40dp"
+            android:layout_height="wrap_content"
+            android:hint="Medicine Name"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/seller_addmeds_price_box"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:focusedByDefault="false"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_addmeds_medname_box">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/seller_addmeds_price_text"
+            android:layout_width="280dp"
+            android:paddingLeft="10dp"
+            android:focusedByDefault="false"
+            android:height="40dp"
+            android:layout_height="wrap_content"
+            android:hint="Price"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/seller_addmeds_expiry_box"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:focusedByDefault="false"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_addmeds_price_box">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/seller_addmeds_expiry_text"
+            android:layout_width="280dp"
+            android:paddingLeft="10dp"
+            android:focusedByDefault="false"
+            android:height="40dp"
+            android:layout_height="wrap_content"
+            android:hint="Expiry"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/seller_addmeds_usage_box"
+        android:layout_width="280dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:focusedByDefault="false"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_addmeds_expiry_box">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/seller_addmeds_usage_text"
+            android:layout_width="280dp"
+            android:paddingLeft="10dp"
+            android:focusedByDefault="false"
+            android:height="40dp"
+            android:layout_height="wrap_content"
+            android:hint="Usage"
+            android:inputType="textEmailAddress" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/seller_addmeds_medtype"
+        style="@style/spinner_style"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="10dp"
+        android:popupBackground="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_addmeds_usage_box" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seller_addmeds_medtype">
+
+        <Button
+            android:id="@+id/seller_addmeds_donebtn"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:background="@drawable/update_details_btn_background"
+            android:text="Done"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/seller_addmeds_addbtn"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/update_details_btn_background"
+            android:text="Add"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

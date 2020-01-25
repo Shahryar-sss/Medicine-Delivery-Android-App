@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddToCartActivity"
+    android:background="@drawable/add_to_cart_background">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rs"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="320dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#095242"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/chosen_med_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="320dp"
+        android:layout_marginLeft="82dp"
+        android:textColor="#095242"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/chosen_med_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginBottom="280dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#095242"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <TextView
+        android:id="@+id/chosen_shop_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="240dp"
+        android:layout_marginLeft="50dp"
+        android:textColor="#095242"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="44dp">
+
+        <Button
+            android:id="@+id/add_to_cart_btn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/add_to_cart_icon" />
+
+        <LinearLayout
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:background="@drawable/quantity_selection_background"
+            android:orientation="horizontal"
+            android:layout_marginStart="40dp">
+
+            <Button
+                android:id="@+id/decrease_quantity_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/minus" />
+
+            <TextView
+                android:id="@+id/selected_quantity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="7.5dp"
+                android:text="1"
+                android:textSize="22dp" />
+
+
+            <Button
+                android:id="@+id/increase_quantity_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/add" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BuyerMainActivity"
+    android:background="@drawable/buyer_main_activity_background">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#B6F1E7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/buyer_mainactivity_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="0dp"
+        android:textColor="#F8F8F8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/buyer_mainactivity_dp_imageview"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/male_avatar"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="15dp"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/buyer_mainactivity_searchbar"
+        android:layout_width="257dp"
+        android:layout_height="40dp"
+        android:background="@drawable/search_bar_background"
+        android:layout_marginTop="116dp"
+        android:layout_marginLeft="25dp"
+        android:drawableLeft="@drawable/search_icon"
+        android:paddingLeft="10dp"
+        android:drawablePadding="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buyer_mainactivity_image_upload_btn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20.5dp"
+        android:layout_marginTop="116dp"
+        android:background="@drawable/image_search_button_background"
+        app:layout_constraintStart_toEndOf="@+id/buyer_mainactivity_searchbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyer_mainactivity_searchbar">
+
+        <Button
+            android:id="@+id/buyer_mainactivity_profile_btn"
+            android:layout_width="51dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/buyer_mainactivity_profile_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buyer_mainactivity_cart_btn"
+            android:layout_width="51dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/buyer_mainactivity_cart_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buyer_mainactivity_profile_btn" />
+
+        <Button
+            android:id="@+id/buyer_mainactivity_subscription_btn"
+            android:layout_width="70dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/buyer_mainactivity_subscription_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buyer_mainactivity_cart_btn" />
+
+        <Button
+            android:id="@+id/buyer_mainactivity_emergency_btn"
+            android:layout_width="60dp"
+            android:layout_height="75dp"
+            android:layout_marginStart="259dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/buyer_mainactivity_emergency_btn"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buyer_mainactivity_subscription_btn" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/buyer_mainactivity_recyclerview"
+        android:layout_width="300dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+</android.support.constraint.ConstraintLayout>
